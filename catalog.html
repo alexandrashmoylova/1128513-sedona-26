@@ -28,26 +28,52 @@
     </header>
     <main>
       <section>
-        <h2>Фильтр расположения</h2>
-        <h2>Инфраструктура:</h2>
-        <ul>
-          <li>Бассейн</li>
-          <li>Парковка</li>
-          <li>Wi-Fi</li>
-        </ul>
-        <h2>Тип жилья:</h2>
-        <ul>
-          <li>Гостиница</li>
-          <li>Мотель</li>
-          <li>Апартаменты</li>
-        </ul>
-        <h2>Стоимость в сутки (Р):</h2>
-        <ul>
+        <h2 class="visually-hidden">Фильтр расположения</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend>Инфраструктура:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="pool" id="pool" checked="">
+                <label for="pool">Бассейн</label>
+              </li>
+              <li>
+                <input type="checkbox" name="parking" id="parking">
+                <label for="parking">Парковка</label>
+              </li>
+              <li>
+                <input type="checkbox" name="Wi-Fi" id="wi-fi">
+                <label for="wi-fi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Тип жилья:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="hotel" id="hotel" checked="">
+                <label for="hotel">Гостиница</label>
+              </li>
+              <li>
+                <input type="checkbox" name="motel" id="motel" checked="">
+                <label for="motel">Мотель</label>
+              </li>
+              <li>
+                <input type="checkbox" name="apartments" id="apartments" checked="">
+                <label for="apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <ul>
           <li>от 0</li>
           <li>до 3000</li>
-        </ul>
-        <input type="range" min="0" max="3000" step="50" value="">
-        <a href="#">Показать</a>
+          </ul>
+          <input type="range" min="0" max="3000" step="50" value="">
+          <a href="#">Показать</a>
+          </fieldset>
+        </form>
       </section>
       <section>
         <p>Найдено:3</p>
