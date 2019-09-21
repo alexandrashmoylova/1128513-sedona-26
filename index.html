@@ -5,7 +5,7 @@
 	<title>Главная</title>
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
@@ -23,8 +23,8 @@
 	</header>
 	<main class="container">
 		<section class="features">
-			<header class="title">
-				<h1 class="page-title">Седона-небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
+			<header class="post-header">
+				<h1 class="post-header-title">Седона-небольшой городок в&nbsp;Аризоне, заслуживающий большего!</h1>
 				<p>Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем Гранд Каньон!</p>
 			</header>
 			<ul class="feautures-list">
@@ -122,24 +122,24 @@
 		</ul>
 		<p class="footer-copyright">
 			Website by
-			<a class="copyright-button" href="https://htmlacademy.ru/intensive/htmlcss">
+			<a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
 				<img src="img/svg/logo-htmlacademy.svg" width="1024" height="41" alt="Логотип HTML Academy">
 			</a>
 		</p>
 	</footer>
 	<section class="popup">
 		<h3>Поиск гостиницы в Седоне</h3>
-		<form class="appoitment-info" action="https://echo.htmlacademy.ru" method="post">
-			<p class="appoitment-item">
+		<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+			<p class="search-item">
 				<label for="arrival-date">Дата заезда:</label>
 				<input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
 			</p>
-			<p class="appoitment-item">
+			<p class="search-item">
 				<label for="departure-date">Дата выезда:</label>
 				<input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
 			</p>
 			<div> 
-				<div class="appoitment-item">
+				<div class="search-item">
 					<label for="adults">Взрослые:</label>
 					<div class="button">
 						<button type="button">-</button>
@@ -147,7 +147,7 @@
 						<button type="button">+</button>
 					</div>
 				</div>
-				<div class="appoitment-item">
+				<div class="search-item">
 					<label for="children">Дети:</label>
 					<div class="button">
 						<button type="button">-</button>
