@@ -18,88 +18,89 @@
           <a href="photos.html">Фото и Видео</a>
         </li>
         <li>
+          <a class="main-header-logo">
+            <img src="img/svg/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
+          </a>
+        <li>
           <a href="map.html">Карта Штата</a>
         </li>
         <li>
           <a class="site-navigation-current">Гостиницы</a>
         </li>
       </ul>
-      <a class="main-header-logo" href="index.html">
-        <img src="img/svg/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
-      </a>
     </nav>
   </header>
   <main class="container">
     <section class="filters">
       <h2 class="visually-hidden">Фильтр расположения</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <label>
-            <input type="checkbox" name="pool" checked="">
+            <input class="filter-input-checkbox" type="checkbox" name="pool" checked="">
             Бассейн
           </label>
           <label>
-            <input type="checkbox" name="parking">
+            <input class="filter-input-checkbox" type="checkbox" name="parking">
             Парковка
           </label>
           <label>
-            <input type="checkbox" name="Wi-Fi">
+            <input class="filter-input-checkbox" type="checkbox" name="Wi-Fi">
             Wi-Fi
           </label>
         </fieldset>
         <fieldset>
           <legend>Тип жилья:</legend>
           <label>
-            <input type="checkbox" name="hotel" checked="">
+            <input class="filter-input-checkbox" type="checkbox" name="hotel" checked="">
             Гостиница
           </label>
           <label>
-            <input type="checkbox" name="motel" checked="">
+            <input class="filter-input-checkbox" type="checkbox" name="motel" checked="">
             Мотель
           </label>
           <label>
-            <input type="checkbox" name="apartments" checked="">
+            <input class="filter-input-checkbox" type="checkbox" name="apartments" checked="">
             Апартаменты
           </label>
         </fieldset>
         <fieldset>
           <label for="prices">Стоимость в сутки (Р):</label>
-          <p>
+          <p class="filter-price">
             <span>от 0</span>
             <span>до 3000</span>
           </p>
-          <input id="prices" type="range" min="0" max="3000" step="50" value="0">
+          <input class="filter-input-range" id="prices" type="range" min="0" max="3000" step="50" value="0">
           <button type="submit">Показать</button>
         </fieldset>
       </form>
     </section>
-    <section>
-      <p>Найдено: 
+    <section class="search-filter">
+      <p class="search-filter-title">Найдено: 
         <span>3</span>
       </p>
       <h2>Сортировка:</h2>
-      <ul>
-        <li>
-          <a href="#">По цене</a>
+      <ul class="search-filter-list">
+        <li class="search-filter-item">
+          <a class="search-filter-link search-filter-link-current" href="#">По цене</a>
         </li>
-        <li>
-          <a href="#">По типу</a>
+        <li class="search-filter-item">
+          <a class="search-filter-link" href="#">По типу</a>
         </li>
-        <li>
-          <a href="#">По рейтингу</a>
+        <li class="search-filter-item">
+          <a class="search-filter-link" href="#">По рейтингу</a>
         </li>
       </ul>
-      <div>
-        <a href="#" aria-label="По возрастанию">По возрастанию</a>
-        <a href="#" aria-label="По убыванию">По убыванию</a>
+      <div class="search-filter-button">
+        <a class="visually-hidden" href="#" aria-label="По возрастанию">По возрастанию</a>
+        <a  class="visually-hidden" href="#" aria-label="По убыванию">По убыванию</a>
       </div>
     </section>
     <section class="catalog">
       <h2 class="visually-hidden">Список гостиниц</h2>
       <ul class="catalog-list">
         <li class="catalog-item">
-          <div>
+          <div class="catalog-list-wrapper">
             <a href="#">
               <img src="img/hotel-picture-1.jpg" width="135" height="90" alt="Отель-1">
             </a>
@@ -123,7 +124,7 @@
           </div>  
         </li>
         <li class="catalog-item">
-          <div>
+          <div class="catalog-list-wrapper">
             <a href="#">
               <img src="img/hotel-picture-2.jpg" width="135" height="90" alt="Отель-2 ">
             </a>
@@ -147,7 +148,7 @@
          </div>
        </li>
        <li class="catalog-item">
-        <div>
+        <div class="catalog-list-wrapper">
           <a href="#">
             <img src="img/hotel-picture-3.jpg" width="135" height="90" alt="Отель-3">
           </a>
@@ -175,7 +176,7 @@
 </main>
 <footer class="footer">
     <a class="footer-link" href="#">#VISITSEDONA</a>
-  <ul class="footer-social">
+  <ul class="footer-social-list">
     <li>
       <a class="social-button" href="#" about="_blank" aria-label="Наш Twitter">
         <span>Twitter</span>
@@ -202,9 +203,9 @@
     </li>
   </ul>
   <p class="footer-copyright">
-    Website by
+    <span>Website by</span>
     <a class="footer-copyright-link" href="https://htmlacademy.ru/intensive/htmlcss">
-      <img src="img/svg/logo-htmlacademy.svg" width="1024" height="41" alt="Логотип HTML Academy">
+      <img src="img/svg/logo-htmlacademy.svg" width="115" height="41" alt="Логотип HTML Academy">
     </a>
   </p>
 </footer>
