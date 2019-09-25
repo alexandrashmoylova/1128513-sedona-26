@@ -31,12 +31,25 @@ a {
 .site-navigation {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	width: 1200px;
-	margin: 0;
+	width: 1056px;
 	padding: 0;
+	margin: 0 auto;
 
 	list-style: none;
+}
+
+.site-navigation li {
+	width: 264px;
+}
+
+.site-navigation li:nth-child(1),
+.site-navigation li:nth-child(2) {
+	text-align: left;
+}
+
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+	text-align: right;
 }
 
 
@@ -269,18 +282,18 @@ a {
 .search-filter {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: baseline; 
 	background-color: #fff;
-	padding-top: 31px;
-	padding-bottom: 33px;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
 }
 
 .search-filter-title {
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
-	text-align: left;
-	
+	padding: 31px 49px 33px 72px;
 }
 
 .search-filter h2 {
@@ -288,16 +301,16 @@ a {
 	line-height: 18px;
 	font-weight: normal;
 	margin: 0;
+	padding: 0;
 }
 
 .search-filter-list {
 	display: flex;
-	flex-direction: space-between;
+	flex-direction: row;
 	font-size: 12px;
 	line-height: 18px;
 	font-weight: normal;
 	list-style: none;
-	
 }
 
 .search-filter-list a {
@@ -333,12 +346,31 @@ a {
 	color: #81b3d2;
 }
 
+.catalog-columns {
+	display: flex;
+	flex-direction: column;
+	width: 1200px;
+}
+
 .catalog {
 	background-color: #fff;
 }
 
 .catalog-list {
 	list-style: none;
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	padding: 0;
+	width: 1200px;
+}
+
+.catalog-item {
+
+}
+
+.catalog-list-wrapper{
+
 }
 
 .catalog-title {
