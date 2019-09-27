@@ -16,7 +16,10 @@ body {
   width: 1200px;
   margin: 0 auto;
   padding: 0 40px;
+  box-sizing: border-box;
+
 }
+
 
 a {
 	text-decoration: none;
@@ -38,6 +41,7 @@ a {
 	list-style: none;
 }
 
+<<<<<<< HEAD
 .site-navigation li {
 	width: 264px;
 }
@@ -50,6 +54,17 @@ a {
 .site-navigation li:nth-child(3),
 .site-navigation li:nth-child(4) {
 	text-align: right;
+=======
+.site-navigation-wrapper {
+	width: 480px;
+	display: flex;
+	list-style: none;
+}
+
+.site-navigation-wrapper li {
+	width: 240px;
+	text-align: center;
+>>>>>>> parent of 3a91718... nnn
 }
 
 
@@ -60,7 +75,7 @@ a {
 .main-header-logo {
 	position: absolute;
 	top: 0;
-	left: 529px;
+	left: 530px;
 	width: 140px;
 	height: 71px;
 }
