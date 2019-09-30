@@ -17,9 +17,7 @@ body {
   margin: 0 auto;
   padding: 0 40px;
   box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
-  box-sizing: border-box;
 }
-
 
 a {
 	text-decoration: none;
@@ -76,17 +74,6 @@ img {
 	text-align: right;
 }
 
-.site-navigation-wrapper {
-	width: 480px;
-	display: flex;
-	list-style: none;
-}
-
-.site-navigation-wrapper li {
-	width: 240px;
-	text-align: center;
-}
-
 .site-navigation a {
 	color: #000;
 }
@@ -94,7 +81,7 @@ img {
 .main-header-logo {
 	position: absolute;
 	top: 0;
-	left: 530px;
+	left: 529px;
 	width: 140px;
 	height: 71px;
 }
@@ -430,7 +417,6 @@ img {
 	font-weight: bold;
 	line-height: 21px;
 	color: #fff;
-	background: 
 }
 
 .filter-option-type,
