@@ -47,7 +47,7 @@ img {
 .main-navigation {
 	position: relative;
 	background-color: #fff;
-	padding: 15px 0;
+	padding: 18px 0;
 }
 
 .site-navigation {
@@ -81,7 +81,7 @@ img {
 .main-header-logo {
 	position: absolute;
 	top: 0;
-	left: 529px;
+	left: 530px;
 	width: 140px;
 	height: 71px;
 }
@@ -99,14 +99,13 @@ img {
 }
 
 .welcome {
-	width: 1200px;
 	height: 510px;
 	background-image: url("../img/welcome.png"),
 	url("../img/polygon.png"),
 	url("../img/background-photo.jpg");
 	background-repeat: no-repeat;
 	background-size: auto, auto, cover;
-	background-position: center, bottom, 0;
+	background-position: 370px 75px, bottom, 0 -83px;
 }
 
 .footer {
@@ -181,7 +180,6 @@ img {
 	color: #bdbbbc;
 }
 
-
 .feautures {
 
 }
@@ -189,6 +187,7 @@ img {
 .post-header {
 	background-color: #fff;
 	padding: 61px 0 56px;
+	font-family: "PT Sans", sans-serif;
 }
 
 .post-header-title {
@@ -196,14 +195,18 @@ img {
 	line-height: 26px;
 	font-weight: bold;
 	text-align: center;
+	max-width: 419px;
+	margin: 0 auto;
+	margin-bottom: 25px;
 }
 
-.post-header p {
+.post-header-text {
 	font-size: 14px;
 	line-height: 26px;
 	color: #333;
 	font-weight: normal;
 	text-align: center;
+	margin: 0;
 }
 
 .feautures-list {
@@ -221,20 +224,29 @@ img {
 	display: flex;
 	align-items: center;
 	width: 1200px;
+	padding: 0;
+	margin: 0;
 	text-align: center;
 	color: #fff;
 	background-color: #81b3d2;
 }
 
+/*.benefit-item-wrapper {
+	padding: 40px 60px;
+}*/
+
 .feauture-item-title {
 	font-size: 21px;
 	font-weight: bold;
 	margin: 0;
+	padding: 46px 60px 64px 60px;
 }
 
 .feauture-item-text {
 	font-size: 14px;
 	font-weight: normal;
+	display: block;
+	margin: 20px 0;
 }
 
 .list {
@@ -284,19 +296,23 @@ img {
 	margin-bottom: 31px;
 }
 
+.recomendation-item-text{
+	max-width: 284px;
+}
+
 .benefits-list {
 	padding: 50px 77px 64px 95px;
 	box-sizing: border-box;
 }
 
-.benetit-item {
+/*.benetit-item {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
 	padding: 0;
-}
+}*/
 
 .appoitment {
 	background-color: #fff;
@@ -309,10 +325,13 @@ img {
 	font-weight: bold;
 	text-align: center;
 	margin: 0;
+	margin-bottom: 25px;
 
 }
 
-.appoitment p {
+.appoitment-date-text {
+	max-width: 434px;
+	margin: 0 auto;
 	font-size: 14px;
 	line-height: 24px;
 	color: #333;
@@ -406,10 +425,11 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-}
-
-.filter-option fieldset {
+	margin: 0;
+	padding: 0;
 	border: none;
+	padding-left: 72px;
+	position: relative
 }
 
 .filter-option-title {
@@ -417,6 +437,27 @@ img {
 	font-weight: bold;
 	line-height: 21px;
 	color: #fff;
+	margin-bottom: 28px;
+	margin-top: 31px;
+}
+
+.filter-option-type {
+	display: block;
+}
+
+.filter-option-input-checkbox {
+	display: none;
+}
+
+.filter-option-type::before {
+	content: "";
+	position: absolute;
+	top: 28px;
+	left: 46px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #fff;
+	border-radius: 3px;
 }
 
 .filter-option-type,
@@ -487,18 +528,41 @@ img {
 }
 
 .search-filter-button {
+	position: relative;
 	margin-left: auto;
 }
 
-.search-filter-button a {
-	color: #cacaca;
+.search-filter-button-link-up::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: 96px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 5.5px 10px 5.5px;
+	border-color: transparent transparent #cacaca transparent;
 }
 
-.search-filter-button a:hover {
+.search-filter-button-link-down::before {
+	content: "";
+	position: absolute;
+	top: -10px;
+	right: 73px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 5.5px 0 5.5px;
+	border-color: #cacaca transparent transparent transparent;
+}
+
+.search-filter-button-link-up:hover,
+.search-filter-button-link-down:hover {
 	color: #000;
 }
 
-.search-filter-button a:active {
+.search-filter-button-link-up:active,
+.search-filter-button-link-down:active {
 	color: #81b3d2;
 }
 
@@ -516,7 +580,6 @@ img {
 	list-style: none;
 	width: 1200px;
 }
-
 
 .catalog-item {
 	display: flex;
@@ -584,12 +647,35 @@ img {
 }
 
 .catalog-rating {
-	margin: 0;
+	position: relative;
+	align-self: flex-end;
+	margin: 0 0 0 auto;
 	color: #666;
 	font-weight: normal;
 	text-align: center;
 	background-color: #f2f2f2;
 	width: 110px;
+}
+.catalog-rating::before {
+	position: absolute;
+	content: "";
+	height: 17px;
+	top: -17px;
+	right: 0;
+	background-image: url("../img/svg/star.svg");
+	background-repeat: repeat-x;
+}
+
+.catalog-star-2::before {
+	width: 41px;
+}
+
+.catalog-star-3::before {
+	width: 60px;
+}
+
+.catalog-star-4::before {
+	width: 80px;
 }
 
 
