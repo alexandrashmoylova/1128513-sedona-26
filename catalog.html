@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>Гостиницы</title>
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -35,45 +34,45 @@
         <h2 class="visually-hidden">Фильтр расположения</h2>
         <form class="filter-option" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-option-item">
-            <legend class="filter-option-title">Инфраструктура:</legend>
-            <label class="filter-option-type">
-              <input class="filter-option-input-checkbox" type="checkbox" name="pool" checked="">
-              Бассейн
-            </label>
-            <label class="filter-option-type">
-              <input class="filter-option-input-checkbox" type="checkbox" name="parking">
-              Парковка
-            </label>
-            <label class="filter-option-type">
-              <input class="filter-option-input-checkbox" type="checkbox" name="Wi-Fi">
-              Wi-Fi
-            </label>
+            <legend class="filter-title title-checkbox">Инфраструктура:</legend>
+            <input class="filter-option-input-checkbox" type="checkbox" name="pool" checked="">
+            <label class="filter-option-type">Бассейн</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="parking">
+            <label class="filter-option-type">Парковка</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="Wi-Fi">
+            <label class="filter-option-type">Wi-Fi</label>
           </fieldset>
           <fieldset class="filter-option-item">
-            <legend class="filter-option-title">Тип жилья:</legend>
-            <label class="filter-option-type">
-              <input class="filter-option-input-checkbox" type="checkbox" name="hotel" checked="">
-              Гостиница
-            </label>
-            <label class="filter-option-type">
-              <input class="filter-option-input-checkbox" type="checkbox" name="motel" checked="">
-              Мотель
-            </label>
-            <label class="filter-option-type">
-              <input class="filter-option-input-checkbox" type="checkbox" name="apartments" checked="">
-              Апартаменты
-            </label>
-          </fieldset>
-          <fieldset class="filter-option-item">
-            <label class="filter-option-title" for="prices">Стоимость в&nbsp;сутки (Р):</label>
-            <p class="filter-price">
-              <span>от&nbsp;0</span>
-              <span>до&nbsp;3000</span>
-            </p>
-            <input class="filter-option-input-range" id="prices" type="range" min="0" max="3000" step="50" value="0">
-            <button type="submit">Показать</button>
+            <legend class="filter-title title-checkbox">Тип жилья:</legend>
+            <input class="filter-option-input-checkbox" type="checkbox" name="hotel" checked="">
+            <label class="filter-option-type">Гостиница</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="motel" checked="">
+            <label class="filter-option-type">Мотель</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="apartments" checked="">
+            <label class="filter-option-type"> Апартаменты</label>
           </fieldset>
         </form>
+        <form class="filter-option-range">
+          <fieldset class="filter-range">
+            <legend class="filter-title range-title">Стоимость в&nbsp;сутки (Р):</legend>
+            <div class="price-controls">
+              <label class="min-price">от
+                <input type="text" name="min-price" value="0">
+              </label>
+              <label class="max-price">до
+                <input type="text" name="max-price" value="3000">
+              </label>
+            </div>
+            <div class="range-controls">
+             <div class="scale">
+               <div class="bar"></div>
+             </div>
+             <div class="range-toggle range-toggle-min"></div>
+             <div class="range-toggle range-toggle-max"></div>
+           </div>
+           <button class="btn-transparent" type="submit">Показать</button>
+         </fieldset>
+       </form>
       </section>
       <section class="search-filter">
         <p class="search-filter-title">Найдено: 
@@ -108,9 +107,9 @@
                 <h3 class="catalog-title">Amara Resort &amp;&nbsp;Spa</h3>
               </a>
               <p class="catalog-item-price-range">Гостиница
-                <span>от </span> 
-                <span>4000</span> 
-                <span>р.</span>
+                <span class="price-text catalog-price-text">от </span> 
+                <span class="catalog-price-text">4000</span> 
+                <span class="catalog-price-text">р.</span>
               </p>
               <p>
                 <a class="catalog-btn-info" href="#">Подробнее</a>
@@ -130,9 +129,9 @@
                 <h3 class="catalog-title">Desert Quail Inn</h3>
               </a>
               <p class="catalog-item-price-range">Мотель
-                <span>от </span> 
-                <span>3000</span> 
-                <span>р.</span>
+                <span class="price-text catalog-price-text">от </span> 
+                <span class="catalog-price-text">3000</span> 
+                <span class="catalog-price-text">р.</span>
               </p>
               <p>
                 <a class="catalog-btn-info" href="#">Подробнее</a>
@@ -154,9 +153,9 @@
                 </h3>
               </a>
               <p class="catalog-item-price-range">Апартаменты
-                <span>от </span>
-                <span>2000</span>
-                <span>р.</span>
+                <span class="price-text catalog-price-text">от </span>
+                <span class="catalog-price-text">2000</span>
+                <span class="catalog-price-text">р.</span>
               </p>
               <p>
                 <a class="catalog-btn-info" href="#">Подробнее</a>
