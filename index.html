@@ -30,7 +30,7 @@
 				</header>
 				<ul class="feautures-list">
 					<li class="feauture-item">
-						<div class="feature-item-wrapper-1">
+						<div class="feature-item-wrapper">
 						<h3 class="feauture-item-title">Настоящий городок</h3>
 						<span class="feauture-item-text">-№1-</span>
 						<p class="feauture-item-text">Седона&nbsp;&mdash; не&nbsp;аттракцион для туристов, там течёт своя жизнь</p>
@@ -59,7 +59,7 @@
 					</li>
 					<li class="feauture-item">
 						<img src="img/devil-bridge.jpg" alt="Мост дьявола">
-						<div class="feature-item-wrapper-2">
+						<div class="feature-item-wrapper">
 						<h3 class="feauture-item-title">Там есть мост дьявола</h3>
 						<span class="feauture-item-text">-№2-</span>
 						<p class="feauture-item-text">Да, по&nbsp;нему можно пройти! Если конечно вы&nbsp;осмелитесь</p>
@@ -132,36 +132,36 @@
 				</a>
 			</p>
 		</footer>
-		<section class="popup">
-			<h3>Поиск гостиницы в Седоне</h3>
+		<section class="modal modal-search">
+			<h3 class="modal-title">Поиск гостиницы в Седоне</h3>
 			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-				<p class="search-item">
+				<p class="search-item search-item-date">
 					<label for="arrival-date">Дата заезда:</label>
 					<input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
 				</p>
-				<p class="search-item">
+				<p class="search-item search-item-date">
 					<label for="departure-date">Дата выезда:</label>
 					<input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
 				</p>
-				<div> 
-					<div class="search-item">
+				<div class="search-item-box">
+					<div class="search-item search-item-people">
 						<label for="adults">Взрослые:</label>
-						<div class="button">
-							<button type="button">-</button>
+						<div class="btn-box">
+							<button class="btn btn-minus" type="button">-</button>
 							<input id="adults" type="number" name="adults" value="" placeholder="2">
-							<button type="button">+</button>
+							<button class="btn btn-plus" type="button">+</button>
 						</div>
 					</div>
-					<div class="search-item">
+					<div class="search-item search-item-people">
 						<label for="children">Дети:</label>
-						<div class="button">
-							<button type="button">-</button>
+						<div class="btn-box">
+							<button class="btn btn-minus" type="button">-</button>
 							<input id="children" type="number" name="children" value="" placeholder="0">
-							<button type="button">+</button>
+							<button class="btn btn-plus" type="button">+</button>
 						</div>
 					</div>
 				</div>
-				<button class="submit" type="submit">Найти</button>
+				<button class="btn-search" type="submit">Найти</button>
 			</form>
 		</section>
 	</div>

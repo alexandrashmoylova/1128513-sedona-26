@@ -24,7 +24,7 @@
             <a class="site-navigation-current">Гостиницы</a>
           </li>
         </ul>
-        <a class="main-header-logo">
+        <a class="main-header-logo" href="index.html">
           <img src="img/svg/logo-sedona.svg" width="140" height="71" alt="Логотип города Седона">
         </a>
       </nav>
@@ -35,21 +35,21 @@
         <form class="filter-option" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="filter-option-item">
             <legend class="filter-title title-checkbox">Инфраструктура:</legend>
-            <input class="filter-option-input-checkbox" type="checkbox" name="pool" checked="">
-            <label class="filter-option-type">Бассейн</label>
-            <input class="filter-option-input-checkbox" type="checkbox" name="parking">
-            <label class="filter-option-type">Парковка</label>
-            <input class="filter-option-input-checkbox" type="checkbox" name="Wi-Fi">
-            <label class="filter-option-type">Wi-Fi</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="pool" id="pool" checked="">
+            <label class="filter-option-type" for="pool">Бассейн</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="parking" id="parking">
+            <label class="filter-option-type" for="parking">Парковка</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="Wi-Fi" id="wi-fi">
+            <label class="filter-option-type" for="wi-fi">Wi-Fi</label>
           </fieldset>
           <fieldset class="filter-option-item">
             <legend class="filter-title title-checkbox">Тип жилья:</legend>
-            <input class="filter-option-input-checkbox" type="checkbox" name="hotel" checked="">
-            <label class="filter-option-type">Гостиница</label>
-            <input class="filter-option-input-checkbox" type="checkbox" name="motel" checked="">
-            <label class="filter-option-type">Мотель</label>
-            <input class="filter-option-input-checkbox" type="checkbox" name="apartments" checked="">
-            <label class="filter-option-type"> Апартаменты</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="hotel" id="hotel" checked="">
+            <label class="filter-option-type" for="hotel">Гостиница</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="motel" id="motel" checked="">
+            <label class="filter-option-type" for="motel">Мотель</label>
+            <input class="filter-option-input-checkbox" type="checkbox" name="apartments" id="apartments" checked="">
+            <label class="filter-option-type" for="apartments"> Апартаменты</label>
           </fieldset>
         </form>
         <form class="filter-option-range">
@@ -90,9 +90,9 @@
             <a class="search-filter-link" href="#">По&nbsp;рейтингу</a>
           </li>
         </ul>
-        <div class="search-filter-button">
-          <a class="search-filter-button-link-up link-up-current" href="#" aria-label="По возрастанию"><!-- По&nbsp;возрастанию --></a>
-          <a  class="search-filter-button-link-down" href="#" aria-label="По убыванию"><!-- По&nbsp;убыванию --></a>
+        <div class="search-filter-btn">
+          <a class="search-filter-btn search-filter-btn-up" href="#" aria-label="По возрастанию"><!-- По&nbsp;возрастанию --></a>
+          <a  class="search-filter-btn search-filter-btn-down btn-current" href="#" aria-label="По убыванию"><!-- По&nbsp;убыванию --></a>
         </div>
       </section>
       <section class="catalog">
@@ -116,9 +116,12 @@
                 <a class="catalog-btn-booking" href="#">Забронировать</a>
               </p>
             </div>
-            <p class="catalog-rating catalog-star-4">Рейтинг: 
-              <span>8,5</span>
+            <div class="catalog-box catalog-stars catalog-star-4">
+              <span class="visually-hidden">Четыре звезды</span>
+            <p class="catalog-text">
+              Рейтинг:<span> 8,5</span>
             </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -138,9 +141,12 @@
                 <a class="catalog-btn-booking" href="#">Забронировать</a>
               </p>
             </div>
-            <p class="catalog-rating catalog-star-3">Рейтинг:
-              <span>8,9</span>
+            <div class="catalog-box catalog-stars catalog-star-3">
+               <span class="visually-hidden">Три звезды</span>
+            <p class="catalog-text">
+              Рейтинг:<span> 8,9</span>
             </p>
+            </div>
           </li>
           <li class="catalog-item">
             <a href="#">
@@ -162,9 +168,12 @@
                 <a class="catalog-btn-booking" href="#">Забронировать</a>
               </p>
             </div>
-            <p class="catalog-rating catalog-star-2">Рейтинг: 
-              <span>9,2</span>
+            <div class="catalog-box catalog-stars catalog-star-2">
+               <span class="visually-hidden">Две звезды</span>
+            <p class="catalog-text"> 
+              Рейтинг:<span> 9,2</span>
             </p>
+            </div>
           </li>
         </ul>
       </section>
