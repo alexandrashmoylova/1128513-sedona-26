@@ -364,7 +364,7 @@ img {
 	left: 50%;
 	margin-left: -281px;
 
-	/*display: none;*/
+	display: none;
 }
 
 .modal-title {
@@ -377,6 +377,15 @@ img {
 	padding: 35px 0;
 
 	background-color: #766357;
+}
+
+.modal-title:hover {
+	background-color: #604e43;
+}
+
+.modal-title:active {
+	background-color: #503e33;
+	color: rgba(255, 255, 255, .3);
 }
 
 .search-form {
@@ -481,6 +490,18 @@ img {
 
 .btn-plus::before {
 	transform: rotate(90deg);
+}
+
+.btn-minus:hover::before,
+.btn-plus:hover::before,
+.btn-plus:hover::after {
+	background-color: #000;
+}
+
+.btn-minus:active::before,
+.btn-plus:active::before,
+.btn-plus:active::after {
+	background-color: #81b3d2;
 }
 
 .search-form input[type="number"] {
