@@ -199,10 +199,6 @@ img {
 	color: #bdbbbc;
 }
 
-.feautures {
-
-}
-
 .post-header {
 	background-color: #fff;
 	padding: 58px 0 51px;
@@ -367,6 +363,8 @@ img {
 	bottom: 10px;
 	left: 50%;
 	margin-left: -281px;
+
+	/*display: none;*/
 }
 
 .modal-title {
@@ -435,13 +433,14 @@ img {
 .search-item-people {
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
 	margin: 0;
 	padding: 0;
 	width: 226px;
 }
 
 .btn-box {
+	position: relative;
 	display: flex;
 	width: 114px;
 	margin: 0;
@@ -454,9 +453,34 @@ img {
 	width: 38px;
 	height: 38px;
 	padding: 0;
-	cursor: pointer;
-	background: #f2f2f2;
+	background-color: #f2f2f2;
 	border: none;
+	cursor: pointer;
+}
+
+.btn-minus::before {
+	content: "";
+	position: absolute;
+	top: 17px;
+	left: 13px;
+	width: 10px;
+	height: 3px;
+	background-color: #a9a9a9;
+}
+
+.btn-plus::before,
+.btn-plus::after {
+	content: "";
+	position: absolute;
+	top: 17px;
+	right: 13px;
+	width: 10px;
+	height: 3px;
+	background-color: #a9a9a9;
+}
+
+.btn-plus::before {
+	transform: rotate(90deg);
 }
 
 .search-form input[type="number"] {
