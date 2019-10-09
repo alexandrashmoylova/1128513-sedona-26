@@ -132,25 +132,26 @@
 				</a>
 			</p>
 		</footer>
-		<section class="modal modal-search">
-			<a href="#" class="modal-link">
-			<h3 class="modal-title">Поиск гостиницы в Седоне</h3>
-			</a>
+		<section class="modal">
+			<h3 class="visually-hidden">Поиск гостиницы в Седоне</h3>
+			<button type="button" class="modal-btn modal-btn-search">Поиск гостиницы в Седоне</button>
 			<form class="search-form" action="https://echo.htmlacademy.ru" method="post">
 				<p class="search-item search-item-date">
 					<label for="arrival-date">Дата заезда:</label>
-					<input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+					<input id="arrival-date" type="text" name="date" value="24 апреля 2017">
+					<button class="btn-calendar" type="button"></button>
 				</p>
 				<p class="search-item search-item-date">
 					<label for="departure-date">Дата выезда:</label>
-					<input id="departure-date" type="text" name="date" value="" placeholder="4 июля 2017">
+					<input id="departure-date" type="text" name="date" value="4 июля 2017">
+					<button class="btn-calendar" type="button"></button>
 				</p>
 				<div class="search-item-box">
 					<div class="search-item search-item-people">
 						<label for="adults">Взрослые:</label>
 						<div class="btn-box">
 							<button class="btn btn-minus" type="button"></button>
-							<input id="adults" type="number" name="adults" value="" placeholder="2">
+							<input id="adults" type="number" name="adults" value="2">
 							<button class="btn btn-plus" type="button"></button>
 						</div>
 					</div>
@@ -158,12 +159,12 @@
 						<label for="children">Дети:</label>
 						<div class="btn-box">
 							<button class="btn btn-minus" type="button"></button>
-							<input id="children" type="number" name="children" value="" placeholder="0">
+							<input id="children" type="number" name="children" value="0">
 							<button class="btn btn-plus" type="button"></button>
 						</div>
 					</div>
 				</div>
-				<button class="btn-search" type="submit">Найти</button>
+				<button class="modal-btn btn-search-submit" type="submit">Найти</button>
 			</form>
 		</section>
 	</div>

@@ -33,6 +33,7 @@ body {
 }
 
 .container {
+	position: relative;
 	width: 1200px;
 	margin: 0 auto;
 	box-shadow: 0 5px 15px rgba(0, 1, 1, .2);
@@ -328,7 +329,6 @@ img {
 .appoitment {
 	background-color: #fff;
 	padding: 48px 0 130px;
-	position: relative;
 }
 
 .appoitment h2 {
@@ -352,37 +352,39 @@ img {
 }
 
 .modal {
-	position: fixed;
+	position: absolute;
+	bottom: 325px;
+	left: 50%;
 	background-color: #fff;
 	color: #000;
 	box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, .15);
-}
-
-.modal-search {
 	width: 568px;
-	bottom: 10px;
-	left: 50%;
 	margin-left: -281px;
-
 }
 
-.modal-title {
+.modal-btn {
+	display: block;
+	padding: 0;
+	border: none;
 	font-size: 21px;
 	line-height: 26px;
-	color: #fff;
 	font-weight: bold;
-	text-align: center;
-	margin: 0;
-	padding: 35px 0;
+	text-transform: uppercase;
+	color: #fff;
+}
 
+.modal-btn-search {
+	display: block;
+	width: 568px;
+	height: 86px;
 	background-color: #766357;
 }
 
-.modal-title:hover {
+.modal-btn-search:hover {
 	background-color: #604e43;
 }
 
-.modal-title:active {
+.modal-btn-search:active {
 	background-color: #503e33;
 	color: rgba(255, 255, 255, .3);
 }
@@ -393,16 +395,18 @@ img {
 	box-sizing: border-box;
 }
 
+
 .search-item-date {
 	display: flex;
-	justify-content: space-between;
-	align-items: baseline;
+	align-items: center;
+	position: relative;
 	width: 458px;
 	line-height: 26px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 29px;
 }
+
 
 .search-item input {
 	font: inherit;
@@ -411,13 +415,14 @@ img {
 	border: none;
 }
 
+
 .search-item input[type="text"] {
-	width: 346px;
+	width: 308px;
+	height: 38px;
 	box-sizing: border-box;
+	padding: 0;
+	padding-left: 13px;
 	padding: 10px 10px;
-	background-image: url("../img/svg/calendar.svg");
-	background-position: 316px center;
-	background-repeat: no-repeat;
 }
 
 .search-item input[type="text"]:hover {
@@ -427,6 +432,30 @@ img {
 .search-item input[type="text"]:focus {
 	background-color: #fff;
 	border: 2px solid #e5e5e5;
+}
+
+.btn-calendar {
+	display: block;
+	width: 38px;
+	height: 38px;
+	margin: 0;
+	padding: 0;
+	background-color: #f2f2f2;
+	border: none;
+	cursor: pointer;
+}
+
+.btn-calendar::before {
+	content: "";
+	position: absolute;
+	width: 21px;
+	height: 22px;
+	top: 8px;
+	right: 32px;
+
+	background-image: url("../img/svg/calendar.svg");
+  	background-repeat: no-repeat;
+  	background-position: 0 0;
 }
 
 .search-item-box {
@@ -440,7 +469,7 @@ img {
 
 .search-item-people {
 	display: flex;
-	justify-content: space-between;
+/*	justify-content: space-between;*/
 	align-items: center;
 	margin: 0;
 	padding: 0;
@@ -464,6 +493,14 @@ img {
 	background-color: #f2f2f2;
 	border: none;
 	cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
 }
 
 .btn-minus::before {
@@ -511,25 +548,18 @@ img {
 	padding: 0;
 }
 
-.btn-search {
-	display: block;
+.btn-search-submit {
 	width: 100%;
 	height: 58px;
 	padding: 0;
-	border: none;
-	color: #fff;
 	background-color: #81b3d2;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	text-transform: uppercase;
 }
 
-.btn-search:hover {
+.btn-search-submit:hover {
 	background-color: #669ec0;
 }
 
-.btn-search:active {
+.btn-search-submit:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, .3)
 }
