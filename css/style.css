@@ -1060,6 +1060,7 @@ input[type="checkbox"]:checked + label {
 
 .catalog-price-text {
 	display: inline-block;
+	vertical-align: top;
 	width: 106px;
 	margin-right: 8px;
 }
